@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-** Created: Thu 26. May 12:00:02 2011
+** Created: Thu 26. May 14:00:21 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -119,7 +119,7 @@ public:
         toolBox->addItem(pageWeight, QString::fromUtf8("by Weight"));
         pageBoxes = new QWidget();
         pageBoxes->setObjectName(QString::fromUtf8("pageBoxes"));
-        pageBoxes->setGeometry(QRect(0, 0, 311, 57));
+        pageBoxes->setGeometry(QRect(0, 0, 272, 57));
         gridLayout_2 = new QGridLayout(pageBoxes);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         label_4 = new QLabel(pageBoxes);
@@ -238,7 +238,7 @@ public:
         QObject::connect(doubleSpinNoBoxesE, SIGNAL(valueChanged(double)), CatchInputCtrl, SLOT(adjustTotalWeightFromNoBoxes(double)));
         QObject::connect(doubleSpinWeightBox, SIGNAL(valueChanged(double)), CatchInputCtrl, SLOT(adjustTotalWeightFromBoxWeight(double)));
 
-        toolBox->setCurrentIndex(2);
+        toolBox->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(CatchInputCtrl);

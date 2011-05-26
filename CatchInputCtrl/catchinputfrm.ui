@@ -34,7 +34,7 @@
  using several methods that match each other.</string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="pageWeight">
       <property name="geometry">
@@ -142,7 +142,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>311</width>
+        <width>272</width>
         <height>57</height>
        </rect>
       </property>
