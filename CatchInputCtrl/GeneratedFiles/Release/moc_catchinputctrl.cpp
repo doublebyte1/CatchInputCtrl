@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'catchinputctrl.h'
 **
-** Created: Thu 26. May 14:00:42 2011
-**      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
+** Created: Fri 27. May 10:48:41 2011
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -11,7 +11,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'catchinputctrl.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
-#error "This file was generated using the moc from 4.7.0. It"
+#error "This file was generated using the moc from 4.6.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,30 +20,36 @@ QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_CatchInputCtrl[] = {
 
  // content:
-       5,       // revision
+       4,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: signature, parameters, type, tag, flags
+      23,   16,   15,   15, 0x05,
 
  // slots: signature, parameters, type, tag, flags
-      20,   16,   15,   15, 0x08,
-      52,   16,   15,   15, 0x08,
-      87,   16,   15,   15, 0x08,
-     124,   16,   15,   15, 0x08,
+      53,   49,   15,   15, 0x08,
+      85,   49,   15,   15, 0x08,
+     120,   49,   15,   15, 0x08,
+     157,   49,   15,   15, 0x08,
+     196,   16,   15,   15, 0x08,
 
        0        // eod
 };
 
 static const char qt_meta_stringdata_CatchInputCtrl[] = {
-    "CatchInputCtrl\0\0val\0adjustTotalWeightFromUnits(int)\0"
+    "CatchInputCtrl\0\0bBlock\0blockWidgetsSignals(bool)\0"
+    "val\0adjustTotalWeightFromUnits(int)\0"
     "adjustTotalWeightFromUnits(double)\0"
     "adjustTotalWeightFromNoBoxes(double)\0"
     "adjustTotalWeightFromBoxWeight(double)\0"
+    "onBlockWidgetsSignals(bool)\0"
 };
 
 const QMetaObject CatchInputCtrl::staticMetaObject = {
@@ -77,14 +83,23 @@ int CatchInputCtrl::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: adjustTotalWeightFromUnits((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 1: adjustTotalWeightFromUnits((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 2: adjustTotalWeightFromNoBoxes((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 3: adjustTotalWeightFromBoxWeight((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 0: blockWidgetsSignals((*reinterpret_cast< const bool(*)>(_a[1]))); break;
+        case 1: adjustTotalWeightFromUnits((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: adjustTotalWeightFromUnits((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 3: adjustTotalWeightFromNoBoxes((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 4: adjustTotalWeightFromBoxWeight((*reinterpret_cast< double(*)>(_a[1]))); break;
+        case 5: onBlockWidgetsSignals((*reinterpret_cast< const bool(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 4;
+        _id -= 6;
     }
     return _id;
+}
+
+// SIGNAL 0
+void CatchInputCtrl::blockWidgetsSignals(const bool _t1)
+{
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_END_MOC_NAMESPACE

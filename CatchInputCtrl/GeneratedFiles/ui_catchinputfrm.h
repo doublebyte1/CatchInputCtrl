@@ -1,8 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-** Created: Thu 26. May 14:00:21 2011
-**      by: Qt User Interface Compiler version 4.7.0
+** Created: Fri 27. May 09:40:55 2011
+**      by: Qt User Interface Compiler version 4.6.3
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/

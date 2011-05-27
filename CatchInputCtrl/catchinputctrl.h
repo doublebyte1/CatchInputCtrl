@@ -39,6 +39,9 @@ class QDESIGNER_WIDGET_EXPORT CatchInputCtrl : public QWidget, public Ui::CatchI
         QDoubleSpinBox      *pDoubleSpinWeightUnit(){return doubleSpinWeightUnit;}
         QComboBox           *pCmbUnitUnits(){return cmbUnitUnits;}
 
+    signals:
+        void                 blockWidgetsSignals(const bool bBlock);
+
     private slots:
         //! Adjust total weight from Units
         /*! Slot triggered by a unit change, that performs the total weight calculation
@@ -64,6 +67,7 @@ class QDESIGNER_WIDGET_EXPORT CatchInputCtrl : public QWidget, public Ui::CatchI
           \sa adjustTotalWeightFromUnits(int val), adjustTotalWeightFromUnits(double val), adjustTotalWeightFromUnits(double val),adjustTotalWeightFromNoBoxes(double val)
         */
         void            adjustTotalWeightFromBoxWeight(double val);
+        void            onBlockWidgetsSignals(const bool bBlock);
 
     private:
         //! Update tab title
