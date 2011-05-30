@@ -1,5 +1,7 @@
 #include "catchinputctrl.h"
 
+static const char *strWeight = 
+     QT_TRANSLATE_NOOP("sections", "by Weight");
 static const char *strUnits = 
      QT_TRANSLATE_NOOP("sections", "by Units");
 static const char *strBoxes = 
@@ -22,10 +24,16 @@ CatchInputCtrl::~CatchInputCtrl()
 void CatchInputCtrl::onBlockWidgetsSignals(bool bBlock)
 {
     doubleSpinTotalE->blockSignals(bBlock);
+    doubleSpinTotalC->blockSignals(bBlock);
+    cmbWeightUnits->blockSignals(bBlock);
     doubleSpinNoBoxesE->blockSignals(bBlock);
+    doubleSpinNoBoxesC->blockSignals(bBlock);
     doubleSpinWeightBox->blockSignals(bBlock);
+    cmbBoxUnits->blockSignals(bBlock);
     spinUnitsE->blockSignals(bBlock);
+    spinUnitsC->blockSignals(bBlock);
     doubleSpinWeightUnit->blockSignals(bBlock);
+    cmbUnitUnits->blockSignals(bBlock);
 }
 
 bool CatchInputCtrl::checkUnits(QComboBox* cmb)
@@ -49,8 +57,7 @@ void CatchInputCtrl::adjustTotalWeightFromBoxWeight(double val)
     if (!checkUnits(cmbBoxUnits)) return;
 
     doubleSpinTotalE->setValue(val*doubleSpinNoBoxesE->value());
-    updateLabel(qApp->translate("sections", strBoxes),
-        QVariant(val*doubleSpinNoBoxesE->value()).toString(),cmbUnitUnits->currentText(),1);
+    updateWeightLabel(QVariant(val*doubleSpinNoBoxesE->value()).toString());
 }
 
 void CatchInputCtrl::adjustTotalWeightFromNoBoxes(double val)
@@ -58,17 +65,15 @@ void CatchInputCtrl::adjustTotalWeightFromNoBoxes(double val)
     if (!checkUnits(cmbBoxUnits)) return;
 
     doubleSpinTotalE->setValue(val*doubleSpinWeightBox->value());
-    updateLabel(qApp->translate("sections", strBoxes),
-        QVariant(val*doubleSpinWeightBox->value()).toString(),cmbUnitUnits->currentText(),1);
+    updateWeightLabel(QVariant(val*doubleSpinWeightBox->value()).toString());
 }
 
 void CatchInputCtrl::adjustTotalWeightFromUnits(double val)
 {
     if (!checkUnits(cmbUnitUnits)) return;
 
-    doubleSpinTotalE->setValue(val*(double)spinUnitsE->value());
-    updateLabel(qApp->translate("sections", strUnits),
-        QVariant(val*(double)spinUnitsE->value()).toString(),cmbUnitUnits->currentText(),2);
+    doubleSpinTotalE->setValue((double)(val*(double)spinUnitsE->value()));
+    updateWeightLabel(QVariant(val*(double)spinUnitsE->value()).toString());
 }
 
 void CatchInputCtrl::adjustTotalWeightFromUnits(int val)
@@ -76,12 +81,28 @@ void CatchInputCtrl::adjustTotalWeightFromUnits(int val)
     if (!checkUnits(cmbUnitUnits)) return;
 
     doubleSpinTotalE->setValue((double)val*doubleSpinWeightUnit->value());
-    updateLabel(qApp->translate("sections", strUnits),
-        QVariant((double)val*doubleSpinWeightUnit->value()).toString(),cmbUnitUnits->currentText(),2);
+    updateWeightLabel(QVariant((double)val*doubleSpinWeightUnit->value()).toString());
 }
 
-void CatchInputCtrl::updateLabel(const QString strBase, const QString strNew, const QString strUnits, const int index)
+void CatchInputCtrl::onWeightUnitChange(QString strUnits)
 {
-    toolBox->setItemText(index,
-        strBase + tr(" (Total Weight: ") + strNew + strUnits + tr(" )")); 
+    updateWeightLabel(QVariant(doubleSpinTotalE->value()).toString());
+}
+
+void CatchInputCtrl::onUnitsUnitChange(QString strUnits)
+{
+    if (!checkUnits(cmbUnitUnits)) return;
+    updateWeightLabel(QVariant(doubleSpinTotalE->value()).toString());
+}
+
+void CatchInputCtrl::onBoxUnitChange(QString strUnits)
+{
+    if (!checkUnits(cmbBoxUnits)) return;
+    updateWeightLabel(QVariant(doubleSpinTotalE->value()).toString());
+}
+
+void CatchInputCtrl::updateWeightLabel(QString strNew)
+{
+    toolBox->setItemText(0,
+        qApp->translate("sections", strWeight) + tr(" (Total: ") + strNew + tr(" ") + cmbWeightUnits->currentText() + tr(" )")); 
 }

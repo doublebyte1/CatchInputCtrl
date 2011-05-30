@@ -67,16 +67,17 @@ class QDESIGNER_WIDGET_EXPORT CatchInputCtrl : public QWidget, public Ui::CatchI
           \sa adjustTotalWeightFromUnits(int val), adjustTotalWeightFromUnits(double val), adjustTotalWeightFromUnits(double val),adjustTotalWeightFromNoBoxes(double val)
         */
         void            adjustTotalWeightFromBoxWeight(double val);
+
+        void            onWeightUnitChange(QString strUnits);
+        void            onUnitsUnitChange(QString strUnits);
+        void            onBoxUnitChange(QString strUnits);
+        //! Update weight tab title
+        /*! This function generates dynamically a tab title, with a total
+        */
+        void            updateWeightLabel(QString strNew);
         void            onBlockWidgetsSignals(const bool bBlock);
 
     private:
-        //! Update tab title
-        /*! This function generates dynamically a tab title, with totals
-        \param strNew calculated total, as string
-        \param strUnits weight units
-        \param index tab index
-        */
-        void            updateLabel(const QString strBase, const QString strNew, const QString strUnits, const int index);
         //! Check Units
         /*! Check point to ensure that the units of the current page, and the units of the total weight page match!
         (otherwise we cannot perform the calculation)
