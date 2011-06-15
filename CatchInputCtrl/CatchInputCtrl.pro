@@ -6,19 +6,26 @@
 # Remove it when you are finished editing this file.
 message("You are running qmake on a generated .pro file. This may not work!")
 
-
 TEMPLATE = lib
-TARGET = CatchInputCtrl
+
+ CONFIG += debug_and_release
+
+ CONFIG(debug, debug|release) {
+     TARGET = CatchInputCtrld
+ } else {
+     TARGET = CatchInputCtrl
+ }
+
 DESTDIR = ../../../../Qt/2010.04/qt/plugins/designer
 QT += core gui sql qtmain designer
-CONFIG += qtestlib release designer plugin
+CONFIG += qtestlib designer plugin
 DEFINES += QT_LARGEFILE_SUPPORT QT_SQL_LIB
 INCLUDEPATH += ./GeneratedFiles \
-    ./GeneratedFiles/Release \
+    ./GeneratedFiles/Debug \
     .
 DEPENDPATH += .
-MOC_DIR += ./GeneratedFiles/release
-OBJECTS_DIR += release
+MOC_DIR += ./GeneratedFiles/debug
+OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
 include(CatchInputCtrl.pri)
