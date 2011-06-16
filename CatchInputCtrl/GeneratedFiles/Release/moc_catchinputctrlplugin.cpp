@@ -1,8 +1,13 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'catchinputctrlplugin.h'
 **
+<<<<<<< HEAD
 ** Created: Sun 5. Jun 23:31:45 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
+=======
+** Created: Wed 15. Jun 13:41:25 2011
+**      by: The Qt Meta Object Compiler version 62 (Qt 4.6.3)
+>>>>>>> e0cf93c176758f5c65b0c8010c145c51e3fafaa9
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/

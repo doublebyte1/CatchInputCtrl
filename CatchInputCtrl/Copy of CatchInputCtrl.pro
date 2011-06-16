@@ -8,7 +8,9 @@ message("You are running qmake on a generated .pro file. This may not work!")
 
 TEMPLATE = lib
 
- CONFIG += debug_and_release
+#This is for allowing building *both* debug and release versions
+
+CONFIG += debug_and_release
 
  CONFIG(debug, debug|release) {
      TARGET = CatchInputCtrld
@@ -16,7 +18,7 @@ TEMPLATE = lib
      TARGET = CatchInputCtrl
  }
 
-DESTDIR = $$[QT_INSTALL_PLUGINS]/designer
+DESTDIR = ../../../../Qt/2010.04/qt/plugins/designer
 QT += core gui sql qtmain designer
 CONFIG += qtestlib designer plugin
 DEFINES += QT_LARGEFILE_SUPPORT QT_SQL_LIB
