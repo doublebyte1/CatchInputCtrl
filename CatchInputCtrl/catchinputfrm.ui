@@ -10,6 +10,9 @@
     <height>171</height>
    </rect>
   </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -21,6 +24,9 @@
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::TabFocus</enum>
      </property>
      <property name="toolTip">
       <string>This widget allows us to introduce the catch, 
@@ -63,6 +69,9 @@
          <property name="text">
           <string>Estimated</string>
          </property>
+         <property name="buddy">
+          <cstring>doubleSpinTotalE</cstring>
+         </property>
         </widget>
        </item>
        <item row="0" column="1">
@@ -75,6 +84,9 @@
          </property>
          <property name="text">
           <string>Calculated</string>
+         </property>
+         <property name="buddy">
+          <cstring>doubleSpinTotalC</cstring>
          </property>
         </widget>
        </item>
@@ -89,10 +101,16 @@
          <property name="text">
           <string>Units</string>
          </property>
+         <property name="buddy">
+          <cstring>cmbWeightUnits</cstring>
+         </property>
         </widget>
        </item>
        <item row="1" column="0">
         <widget class="QDoubleSpinBox" name="doubleSpinTotalE">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Estimated total catch weight</string>
          </property>
@@ -109,6 +127,9 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Calculated total catch weight 
  (comes from the aggregation of totals introduced in next forms)</string>
@@ -124,6 +145,9 @@
        </item>
        <item row="1" column="2">
         <widget class="QComboBox" name="cmbWeightUnits">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Weight units</string>
          </property>
@@ -142,7 +166,7 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>272</width>
+        <width>311</width>
         <height>57</height>
        </rect>
       </property>
@@ -164,6 +188,9 @@
          <property name="text">
           <string>Estimated</string>
          </property>
+         <property name="buddy">
+          <cstring>doubleSpinNoBoxesE</cstring>
+         </property>
         </widget>
        </item>
        <item row="0" column="1">
@@ -176,6 +203,9 @@
          </property>
          <property name="text">
           <string>Calculated</string>
+         </property>
+         <property name="buddy">
+          <cstring>doubleSpinNoBoxesC</cstring>
          </property>
         </widget>
        </item>
@@ -190,6 +220,9 @@
          <property name="text">
           <string>Weight/box</string>
          </property>
+         <property name="buddy">
+          <cstring>doubleSpinWeightBox</cstring>
+         </property>
         </widget>
        </item>
        <item row="0" column="3">
@@ -203,10 +236,16 @@
          <property name="text">
           <string>Units</string>
          </property>
+         <property name="buddy">
+          <cstring>cmbBoxUnits</cstring>
+         </property>
         </widget>
        </item>
        <item row="1" column="0">
         <widget class="QDoubleSpinBox" name="doubleSpinNoBoxesE">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Estimated number of boxes</string>
          </property>
@@ -223,6 +262,9 @@
          <property name="enabled">
           <bool>false</bool>
          </property>
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Calculated number of boxes 
  (comes from the aggregation of totals introduced in next forms)</string>
@@ -238,6 +280,9 @@
        </item>
        <item row="1" column="2">
         <widget class="QDoubleSpinBox" name="doubleSpinWeightBox">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Box weight</string>
          </property>
@@ -251,6 +296,9 @@
        </item>
        <item row="1" column="3">
         <widget class="QComboBox" name="cmbBoxUnits">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Box weight units</string>
          </property>
@@ -291,6 +339,9 @@
          <property name="text">
           <string>Estimated</string>
          </property>
+         <property name="buddy">
+          <cstring>spinUnitsE</cstring>
+         </property>
         </widget>
        </item>
        <item row="0" column="1">
@@ -303,6 +354,9 @@
          </property>
          <property name="text">
           <string>Calculated</string>
+         </property>
+         <property name="buddy">
+          <cstring>spinUnitsC</cstring>
          </property>
         </widget>
        </item>
@@ -317,6 +371,9 @@
          <property name="text">
           <string>Weight/unit</string>
          </property>
+         <property name="buddy">
+          <cstring>doubleSpinWeightUnit</cstring>
+         </property>
         </widget>
        </item>
        <item row="0" column="3">
@@ -330,10 +387,16 @@
          <property name="text">
           <string>Units</string>
          </property>
+         <property name="buddy">
+          <cstring>cmbUnitUnits</cstring>
+         </property>
         </widget>
        </item>
        <item row="1" column="0">
         <widget class="QSpinBox" name="spinUnitsE">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Estimated units</string>
          </property>
@@ -349,6 +412,9 @@
         <widget class="QSpinBox" name="spinUnitsC">
          <property name="enabled">
           <bool>false</bool>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
          </property>
          <property name="toolTip">
           <string>Calculated units 
@@ -368,6 +434,9 @@
          <property name="enabled">
           <bool>true</bool>
          </property>
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Unit weight</string>
          </property>
@@ -381,6 +450,9 @@
        </item>
        <item row="1" column="3">
         <widget class="QComboBox" name="cmbUnitUnits">
+         <property name="focusPolicy">
+          <enum>Qt::WheelFocus</enum>
+         </property>
          <property name="toolTip">
           <string>Unit weight units</string>
          </property>
@@ -464,11 +536,95 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>cmbWeightUnits</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>CatchInputCtrl</receiver>
+   <slot>onWeightUnitChange(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>263</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbBoxUnits</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>CatchInputCtrl</receiver>
+   <slot>onBoxUnitChange(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cmbUnitUnits</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>CatchInputCtrl</receiver>
+   <slot>onUnitsUnitChange(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinTotalE</sender>
+   <signal>valueChanged(QString)</signal>
+   <receiver>CatchInputCtrl</receiver>
+   <slot>updateWeightLabel(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>64</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>doubleSpinTotalC</sender>
+   <signal>valueChanged(QString)</signal>
+   <receiver>CatchInputCtrl</receiver>
+   <slot>updateWeightLabel(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>164</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>adjustTotalWeightFromUnits(int)</slot>
   <slot>adjustTotalWeightFromUnits(double)</slot>
   <slot>adjustTotalWeightFromBoxWeight(double)</slot>
   <slot>adjustTotalWeightFromNoBoxes(double)</slot>
+  <slot>onWeightUnitChange(QString)</slot>
+  <slot>onUnitsUnitChange(QString)</slot>
+  <slot>onBoxUnitChange(QString)</slot>
+  <slot>updateWeightLabel(QString)</slot>
  </slots>
 </ui>

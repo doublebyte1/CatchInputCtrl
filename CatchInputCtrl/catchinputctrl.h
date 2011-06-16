@@ -27,20 +27,20 @@ class QDESIGNER_WIDGET_EXPORT CatchInputCtrl : public QWidget, public Ui::CatchI
         ~CatchInputCtrl();
 
         //here we expose the controls, so that we can use them in a QDataWidgetMapper
-        QDoubleSpinBox      *pDoubleSpinTotalE(){return doubleSpinTotalE;}
-        QDoubleSpinBox      *pDoubleSpinTotalC(){return doubleSpinTotalC;}
-        QComboBox           *pCmbWeightUnits(){return cmbWeightUnits;}
-        QDoubleSpinBox      *pDoubleSpinNoBoxesE(){return doubleSpinNoBoxesE;}
-        QDoubleSpinBox      *pDoubleSpinNoBoxesC(){return doubleSpinNoBoxesC;};
-        QDoubleSpinBox      *pDoubleSpinWeightBox(){return doubleSpinWeightBox;}
-        QComboBox           *pCmbBoxUnits(){return cmbBoxUnits;}
-        QSpinBox            *pSpinUnitsE(){return spinUnitsE;}
-        QSpinBox            *pSpinUnitsC(){return spinUnitsC;}
-        QDoubleSpinBox      *pDoubleSpinWeightUnit(){return doubleSpinWeightUnit;}
-        QComboBox           *pCmbUnitUnits(){return cmbUnitUnits;}
+        QDoubleSpinBox      *pDoubleSpinTotalE(){return doubleSpinTotalE;}//!< Returns a pointer to the spinbox with the total estimated catch (weight).
+        QDoubleSpinBox      *pDoubleSpinTotalC(){return doubleSpinTotalC;}//!< Returns a pointer to the spinbox with the total calculated catch (weight).
+        QComboBox           *pCmbWeightUnits(){return cmbWeightUnits;}//!< Returns a pointer to the combobox, with the units for the total catch.
+        QDoubleSpinBox      *pDoubleSpinNoBoxesE(){return doubleSpinNoBoxesE;}//!< Returns a pointer to the double spinbox, with the estimated number of boxes.
+        QDoubleSpinBox      *pDoubleSpinNoBoxesC(){return doubleSpinNoBoxesC;};//!< Returns a pointer to the double spinbox, with the calculated number of boxes.
+        QDoubleSpinBox      *pDoubleSpinWeightBox(){return doubleSpinWeightBox;}//!< Returns a pointer to the double spinbox, with the weight per box.
+        QComboBox           *pCmbBoxUnits(){return cmbBoxUnits;}//!< Returns a pointer to the combobox, with the units for the catch per box.
+        QSpinBox            *pSpinUnitsE(){return spinUnitsE;}//!< Returns a pointer to the spinbox with the estimated number of catch units.
+        QSpinBox            *pSpinUnitsC(){return spinUnitsC;}//!< Returns a pointer to the spinbox with the calculated number of catch units.
+        QDoubleSpinBox      *pDoubleSpinWeightUnit(){return doubleSpinWeightUnit;}//!< Returns a pointer to the double spinbox with the weight per unit.
+        QComboBox           *pCmbUnitUnits(){return cmbUnitUnits;}//!< Returns a pointer to the combobox, with the units for the catch per unit.
 
     signals:
-        void                 blockWidgetsSignals(const bool bBlock);
+        void                 blockWidgetsSignals(const bool bBlock);//!< This is a convenience function to block/ublock signals to all the widgets contained in this control;
 
     private slots:
         //! Adjust total weight from Units
@@ -67,16 +67,17 @@ class QDESIGNER_WIDGET_EXPORT CatchInputCtrl : public QWidget, public Ui::CatchI
           \sa adjustTotalWeightFromUnits(int val), adjustTotalWeightFromUnits(double val), adjustTotalWeightFromUnits(double val),adjustTotalWeightFromNoBoxes(double val)
         */
         void            adjustTotalWeightFromBoxWeight(double val);
+
+        void            onWeightUnitChange(QString strUnits);
+        void            onUnitsUnitChange(QString strUnits);
+        void            onBoxUnitChange(QString strUnits);
+        //! Update weight tab title
+        /*! This function generates dynamically a tab title, with a total
+        */
+        void            updateWeightLabel(QString strNew);
         void            onBlockWidgetsSignals(const bool bBlock);
 
     private:
-        //! Update tab title
-        /*! This function generates dynamically a tab title, with totals
-        \param strNew calculated total, as string
-        \param strUnits weight units
-        \param index tab index
-        */
-        void            updateLabel(const QString strBase, const QString strNew, const QString strUnits, const int index);
         //! Check Units
         /*! Check point to ensure that the units of the current page, and the units of the total weight page match!
         (otherwise we cannot perform the calculation)

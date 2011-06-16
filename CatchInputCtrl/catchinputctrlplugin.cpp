@@ -50,7 +50,7 @@ QString CatchInputCtrlPlugin::toolTip() const
 
 QString CatchInputCtrlPlugin::whatsThis() const
 {
-    return QString();
+    return tr("This widget allows to input the catch totals, using different methods");
 }
 
 bool CatchInputCtrlPlugin::isContainer() const

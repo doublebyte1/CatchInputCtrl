@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-** Created: Sun 29. May 14:45:38 2011
+** Created: Sun 5. Jun 22:33:26 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -65,6 +65,7 @@ public:
         if (CatchInputCtrl->objectName().isEmpty())
             CatchInputCtrl->setObjectName(QString::fromUtf8("CatchInputCtrl"));
         CatchInputCtrl->resize(329, 171);
+        CatchInputCtrl->setFocusPolicy(Qt::TabFocus);
         verticalLayout = new QVBoxLayout(CatchInputCtrl);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         toolBox = new QToolBox(CatchInputCtrl);
@@ -74,6 +75,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(toolBox->sizePolicy().hasHeightForWidth());
         toolBox->setSizePolicy(sizePolicy);
+        toolBox->setFocusPolicy(Qt::TabFocus);
         pageWeight = new QWidget();
         pageWeight->setObjectName(QString::fromUtf8("pageWeight"));
         pageWeight->setGeometry(QRect(0, 0, 311, 57));
@@ -102,24 +104,27 @@ public:
 
         doubleSpinTotalE = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalE->setObjectName(QString::fromUtf8("doubleSpinTotalE"));
+        doubleSpinTotalE->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(doubleSpinTotalE, 1, 0, 1, 1);
 
         doubleSpinTotalC = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalC->setObjectName(QString::fromUtf8("doubleSpinTotalC"));
         doubleSpinTotalC->setEnabled(false);
+        doubleSpinTotalC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(doubleSpinTotalC, 1, 1, 1, 1);
 
         cmbWeightUnits = new QComboBox(pageWeight);
         cmbWeightUnits->setObjectName(QString::fromUtf8("cmbWeightUnits"));
+        cmbWeightUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(cmbWeightUnits, 1, 2, 1, 1);
 
         toolBox->addItem(pageWeight, QString::fromUtf8("by Weight"));
         pageBoxes = new QWidget();
         pageBoxes->setObjectName(QString::fromUtf8("pageBoxes"));
-        pageBoxes->setGeometry(QRect(0, 0, 272, 57));
+        pageBoxes->setGeometry(QRect(0, 0, 311, 57));
         gridLayout_2 = new QGridLayout(pageBoxes);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         label_4 = new QLabel(pageBoxes);
@@ -152,22 +157,26 @@ public:
 
         doubleSpinNoBoxesE = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesE->setObjectName(QString::fromUtf8("doubleSpinNoBoxesE"));
+        doubleSpinNoBoxesE->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesE, 1, 0, 1, 1);
 
         doubleSpinNoBoxesC = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesC->setObjectName(QString::fromUtf8("doubleSpinNoBoxesC"));
         doubleSpinNoBoxesC->setEnabled(false);
+        doubleSpinNoBoxesC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesC, 1, 1, 1, 1);
 
         doubleSpinWeightBox = new QDoubleSpinBox(pageBoxes);
         doubleSpinWeightBox->setObjectName(QString::fromUtf8("doubleSpinWeightBox"));
+        doubleSpinWeightBox->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(doubleSpinWeightBox, 1, 2, 1, 1);
 
         cmbBoxUnits = new QComboBox(pageBoxes);
         cmbBoxUnits->setObjectName(QString::fromUtf8("cmbBoxUnits"));
+        cmbBoxUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(cmbBoxUnits, 1, 3, 1, 1);
 
@@ -207,23 +216,27 @@ public:
 
         spinUnitsE = new QSpinBox(pageUnits);
         spinUnitsE->setObjectName(QString::fromUtf8("spinUnitsE"));
+        spinUnitsE->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(spinUnitsE, 1, 0, 1, 1);
 
         spinUnitsC = new QSpinBox(pageUnits);
         spinUnitsC->setObjectName(QString::fromUtf8("spinUnitsC"));
         spinUnitsC->setEnabled(false);
+        spinUnitsC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(spinUnitsC, 1, 1, 1, 1);
 
         doubleSpinWeightUnit = new QDoubleSpinBox(pageUnits);
         doubleSpinWeightUnit->setObjectName(QString::fromUtf8("doubleSpinWeightUnit"));
         doubleSpinWeightUnit->setEnabled(true);
+        doubleSpinWeightUnit->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(doubleSpinWeightUnit, 1, 2, 1, 1);
 
         cmbUnitUnits = new QComboBox(pageUnits);
         cmbUnitUnits->setObjectName(QString::fromUtf8("cmbUnitUnits"));
+        cmbUnitUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(cmbUnitUnits, 1, 3, 1, 1);
 
@@ -231,12 +244,30 @@ public:
 
         verticalLayout->addWidget(toolBox);
 
+#ifndef QT_NO_SHORTCUT
+        label->setBuddy(doubleSpinTotalE);
+        label_2->setBuddy(doubleSpinTotalC);
+        label_3->setBuddy(cmbWeightUnits);
+        label_4->setBuddy(doubleSpinNoBoxesE);
+        label_5->setBuddy(doubleSpinNoBoxesC);
+        label_6->setBuddy(doubleSpinWeightBox);
+        label_7->setBuddy(cmbBoxUnits);
+        label_8->setBuddy(spinUnitsE);
+        label_9->setBuddy(spinUnitsC);
+        label_10->setBuddy(doubleSpinWeightUnit);
+        label_11->setBuddy(cmbUnitUnits);
+#endif // QT_NO_SHORTCUT
 
         retranslateUi(CatchInputCtrl);
         QObject::connect(spinUnitsE, SIGNAL(valueChanged(int)), CatchInputCtrl, SLOT(adjustTotalWeightFromUnits(int)));
         QObject::connect(doubleSpinWeightUnit, SIGNAL(valueChanged(double)), CatchInputCtrl, SLOT(adjustTotalWeightFromUnits(double)));
         QObject::connect(doubleSpinNoBoxesE, SIGNAL(valueChanged(double)), CatchInputCtrl, SLOT(adjustTotalWeightFromNoBoxes(double)));
         QObject::connect(doubleSpinWeightBox, SIGNAL(valueChanged(double)), CatchInputCtrl, SLOT(adjustTotalWeightFromBoxWeight(double)));
+        QObject::connect(cmbWeightUnits, SIGNAL(currentIndexChanged(QString)), CatchInputCtrl, SLOT(onWeightUnitChange(QString)));
+        QObject::connect(cmbBoxUnits, SIGNAL(currentIndexChanged(QString)), CatchInputCtrl, SLOT(onBoxUnitChange(QString)));
+        QObject::connect(cmbUnitUnits, SIGNAL(currentIndexChanged(QString)), CatchInputCtrl, SLOT(onUnitsUnitChange(QString)));
+        QObject::connect(doubleSpinTotalE, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
+        QObject::connect(doubleSpinTotalC, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
 
         toolBox->setCurrentIndex(0);
 

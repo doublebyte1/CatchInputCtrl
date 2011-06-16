@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'catchinputctrl.h'
 **
-** Created: Sun 29. May 14:45:38 2011
+** Created: Sun 5. Jun 23:31:45 2011
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_CatchInputCtrl[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+      10,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -38,7 +38,11 @@ static const uint qt_meta_data_CatchInputCtrl[] = {
       85,   49,   15,   15, 0x08,
      120,   49,   15,   15, 0x08,
      157,   49,   15,   15, 0x08,
-     196,   16,   15,   15, 0x08,
+     205,  196,   15,   15, 0x08,
+     233,  196,   15,   15, 0x08,
+     260,  196,   15,   15, 0x08,
+     292,  285,   15,   15, 0x08,
+     319,   16,   15,   15, 0x08,
 
        0        // eod
 };
@@ -49,6 +53,10 @@ static const char qt_meta_stringdata_CatchInputCtrl[] = {
     "adjustTotalWeightFromUnits(double)\0"
     "adjustTotalWeightFromNoBoxes(double)\0"
     "adjustTotalWeightFromBoxWeight(double)\0"
+    "strUnits\0onWeightUnitChange(QString)\0"
+    "onUnitsUnitChange(QString)\0"
+    "onBoxUnitChange(QString)\0strNew\0"
+    "updateWeightLabel(QString)\0"
     "onBlockWidgetsSignals(bool)\0"
 };
 
@@ -88,10 +96,14 @@ int CatchInputCtrl::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 2: adjustTotalWeightFromUnits((*reinterpret_cast< double(*)>(_a[1]))); break;
         case 3: adjustTotalWeightFromNoBoxes((*reinterpret_cast< double(*)>(_a[1]))); break;
         case 4: adjustTotalWeightFromBoxWeight((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 5: onBlockWidgetsSignals((*reinterpret_cast< const bool(*)>(_a[1]))); break;
+        case 5: onWeightUnitChange((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 6: onUnitsUnitChange((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 7: onBoxUnitChange((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 8: updateWeightLabel((*reinterpret_cast< QString(*)>(_a[1]))); break;
+        case 9: onBlockWidgetsSignals((*reinterpret_cast< const bool(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 6;
+        _id -= 10;
     }
     return _id;
 }
