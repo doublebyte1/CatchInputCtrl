@@ -1,13 +1,8 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-<<<<<<< HEAD
-** Created: Sun 5. Jun 22:33:26 2011
+** Created: Mon 28. Nov 13:20:47 2011
 **      by: Qt User Interface Compiler version 4.7.0
-=======
-** Created: Wed 15. Jun 13:41:18 2011
-**      by: Qt User Interface Compiler version 4.6.3
->>>>>>> e0cf93c176758f5c65b0c8010c145c51e3fafaa9
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -69,7 +64,7 @@ public:
     {
         if (CatchInputCtrl->objectName().isEmpty())
             CatchInputCtrl->setObjectName(QString::fromUtf8("CatchInputCtrl"));
-        CatchInputCtrl->resize(329, 171);
+        CatchInputCtrl->resize(329, 156);
         CatchInputCtrl->setFocusPolicy(Qt::TabFocus);
         verticalLayout = new QVBoxLayout(CatchInputCtrl);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
@@ -109,19 +104,32 @@ public:
 
         doubleSpinTotalE = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalE->setObjectName(QString::fromUtf8("doubleSpinTotalE"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(94);
+        sizePolicy1.setVerticalStretch(20);
+        sizePolicy1.setHeightForWidth(doubleSpinTotalE->sizePolicy().hasHeightForWidth());
+        doubleSpinTotalE->setSizePolicy(sizePolicy1);
         doubleSpinTotalE->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinTotalE->setMaximum(1000);
 
         gridLayout_3->addWidget(doubleSpinTotalE, 1, 0, 1, 1);
 
         doubleSpinTotalC = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalC->setObjectName(QString::fromUtf8("doubleSpinTotalC"));
         doubleSpinTotalC->setEnabled(false);
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy2.setHorizontalStretch(93);
+        sizePolicy2.setVerticalStretch(20);
+        sizePolicy2.setHeightForWidth(doubleSpinTotalC->sizePolicy().hasHeightForWidth());
+        doubleSpinTotalC->setSizePolicy(sizePolicy2);
         doubleSpinTotalC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(doubleSpinTotalC, 1, 1, 1, 1);
 
         cmbWeightUnits = new QComboBox(pageWeight);
         cmbWeightUnits->setObjectName(QString::fromUtf8("cmbWeightUnits"));
+        sizePolicy1.setHeightForWidth(cmbWeightUnits->sizePolicy().hasHeightForWidth());
+        cmbWeightUnits->setSizePolicy(sizePolicy1);
         cmbWeightUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(cmbWeightUnits, 1, 2, 1, 1);
@@ -162,25 +170,47 @@ public:
 
         doubleSpinNoBoxesE = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesE->setObjectName(QString::fromUtf8("doubleSpinNoBoxesE"));
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy3.setHorizontalStretch(67);
+        sizePolicy3.setVerticalStretch(20);
+        sizePolicy3.setHeightForWidth(doubleSpinNoBoxesE->sizePolicy().hasHeightForWidth());
+        doubleSpinNoBoxesE->setSizePolicy(sizePolicy3);
         doubleSpinNoBoxesE->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinNoBoxesE->setMaximum(1000);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesE, 1, 0, 1, 1);
 
         doubleSpinNoBoxesC = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesC->setObjectName(QString::fromUtf8("doubleSpinNoBoxesC"));
         doubleSpinNoBoxesC->setEnabled(false);
+        QSizePolicy sizePolicy4(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy4.setHorizontalStretch(53);
+        sizePolicy4.setVerticalStretch(20);
+        sizePolicy4.setHeightForWidth(doubleSpinNoBoxesC->sizePolicy().hasHeightForWidth());
+        doubleSpinNoBoxesC->setSizePolicy(sizePolicy4);
         doubleSpinNoBoxesC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesC, 1, 1, 1, 1);
 
         doubleSpinWeightBox = new QDoubleSpinBox(pageBoxes);
         doubleSpinWeightBox->setObjectName(QString::fromUtf8("doubleSpinWeightBox"));
+        QSizePolicy sizePolicy5(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy5.setHorizontalStretch(65);
+        sizePolicy5.setVerticalStretch(20);
+        sizePolicy5.setHeightForWidth(doubleSpinWeightBox->sizePolicy().hasHeightForWidth());
+        doubleSpinWeightBox->setSizePolicy(sizePolicy5);
         doubleSpinWeightBox->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinWeightBox->setMaximum(1000);
 
         gridLayout_2->addWidget(doubleSpinWeightBox, 1, 2, 1, 1);
 
         cmbBoxUnits = new QComboBox(pageBoxes);
         cmbBoxUnits->setObjectName(QString::fromUtf8("cmbBoxUnits"));
+        QSizePolicy sizePolicy6(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy6.setHorizontalStretch(74);
+        sizePolicy6.setVerticalStretch(20);
+        sizePolicy6.setHeightForWidth(cmbBoxUnits->sizePolicy().hasHeightForWidth());
+        cmbBoxUnits->setSizePolicy(sizePolicy6);
         cmbBoxUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(cmbBoxUnits, 1, 3, 1, 1);
@@ -221,13 +251,21 @@ public:
 
         spinUnitsE = new QSpinBox(pageUnits);
         spinUnitsE->setObjectName(QString::fromUtf8("spinUnitsE"));
+        sizePolicy3.setHeightForWidth(spinUnitsE->sizePolicy().hasHeightForWidth());
+        spinUnitsE->setSizePolicy(sizePolicy3);
         spinUnitsE->setFocusPolicy(Qt::WheelFocus);
+        spinUnitsE->setMaximum(1000);
 
         gridLayout->addWidget(spinUnitsE, 1, 0, 1, 1);
 
         spinUnitsC = new QSpinBox(pageUnits);
         spinUnitsC->setObjectName(QString::fromUtf8("spinUnitsC"));
         spinUnitsC->setEnabled(false);
+        QSizePolicy sizePolicy7(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy7.setHorizontalStretch(50);
+        sizePolicy7.setVerticalStretch(20);
+        sizePolicy7.setHeightForWidth(spinUnitsC->sizePolicy().hasHeightForWidth());
+        spinUnitsC->setSizePolicy(sizePolicy7);
         spinUnitsC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(spinUnitsC, 1, 1, 1, 1);
@@ -235,12 +273,17 @@ public:
         doubleSpinWeightUnit = new QDoubleSpinBox(pageUnits);
         doubleSpinWeightUnit->setObjectName(QString::fromUtf8("doubleSpinWeightUnit"));
         doubleSpinWeightUnit->setEnabled(true);
+        sizePolicy5.setHeightForWidth(doubleSpinWeightUnit->sizePolicy().hasHeightForWidth());
+        doubleSpinWeightUnit->setSizePolicy(sizePolicy5);
         doubleSpinWeightUnit->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinWeightUnit->setMaximum(1000);
 
         gridLayout->addWidget(doubleSpinWeightUnit, 1, 2, 1, 1);
 
         cmbUnitUnits = new QComboBox(pageUnits);
         cmbUnitUnits->setObjectName(QString::fromUtf8("cmbUnitUnits"));
+        sizePolicy6.setHeightForWidth(cmbUnitUnits->sizePolicy().hasHeightForWidth());
+        cmbUnitUnits->setSizePolicy(sizePolicy6);
         cmbUnitUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(cmbUnitUnits, 1, 3, 1, 1);
@@ -274,7 +317,7 @@ public:
         QObject::connect(doubleSpinTotalE, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
         QObject::connect(doubleSpinTotalC, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
 
-        toolBox->setCurrentIndex(0);
+        toolBox->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(CatchInputCtrl);
