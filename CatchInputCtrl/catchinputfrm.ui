@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>329</width>
-    <height>156</height>
+    <width>283</width>
+    <height>157</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>270</width>
+    <height>157</height>
+   </size>
   </property>
   <property name="focusPolicy">
    <enum>Qt::TabFocus</enum>
@@ -20,10 +32,16 @@
    <item>
     <widget class="QToolBox" name="toolBox">
      <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
        <horstretch>0</horstretch>
        <verstretch>0</verstretch>
       </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>139</height>
+      </size>
      </property>
      <property name="focusPolicy">
       <enum>Qt::TabFocus</enum>
@@ -40,15 +58,15 @@
  using several methods that match each other.</string>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="pageWeight">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>311</width>
-        <height>57</height>
+        <width>265</width>
+        <height>58</height>
        </rect>
       </property>
       <attribute name="label">
@@ -109,10 +127,16 @@
        <item row="1" column="0">
         <widget class="QDoubleSpinBox" name="doubleSpinTotalE">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>94</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -137,10 +161,16 @@
           <bool>false</bool>
          </property>
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>93</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -161,10 +191,16 @@
        <item row="1" column="2">
         <widget class="QComboBox" name="cmbWeightUnits">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>94</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -187,8 +223,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>311</width>
-        <height>57</height>
+        <width>265</width>
+        <height>58</height>
        </rect>
       </property>
       <attribute name="label">
@@ -265,10 +301,16 @@
        <item row="1" column="0">
         <widget class="QDoubleSpinBox" name="doubleSpinNoBoxesE">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>67</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -293,10 +335,16 @@
           <bool>false</bool>
          </property>
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>53</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -317,10 +365,16 @@
        <item row="1" column="2">
         <widget class="QDoubleSpinBox" name="doubleSpinWeightBox">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>65</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -342,10 +396,16 @@
        <item row="1" column="3">
         <widget class="QComboBox" name="cmbBoxUnits">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>74</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -368,8 +428,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>311</width>
-        <height>57</height>
+        <width>265</width>
+        <height>58</height>
        </rect>
       </property>
       <attribute name="label">
@@ -446,10 +506,16 @@
        <item row="1" column="0">
         <widget class="QSpinBox" name="spinUnitsE">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>67</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -474,10 +540,16 @@
           <bool>false</bool>
          </property>
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>50</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -501,10 +573,16 @@
           <bool>true</bool>
          </property>
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>65</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>
@@ -526,10 +604,16 @@
        <item row="1" column="3">
         <widget class="QComboBox" name="cmbUnitUnits">
          <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
            <horstretch>74</horstretch>
            <verstretch>20</verstretch>
           </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>20</height>
+          </size>
          </property>
          <property name="focusPolicy">
           <enum>Qt::WheelFocus</enum>

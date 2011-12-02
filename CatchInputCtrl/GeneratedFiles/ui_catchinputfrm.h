@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-** Created: Mon 28. Nov 13:20:47 2011
+** Created: Fri 2. Dec 16:18:46 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -64,51 +64,59 @@ public:
     {
         if (CatchInputCtrl->objectName().isEmpty())
             CatchInputCtrl->setObjectName(QString::fromUtf8("CatchInputCtrl"));
-        CatchInputCtrl->resize(329, 156);
+        CatchInputCtrl->resize(283, 157);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(CatchInputCtrl->sizePolicy().hasHeightForWidth());
+        CatchInputCtrl->setSizePolicy(sizePolicy);
+        CatchInputCtrl->setMinimumSize(QSize(270, 157));
         CatchInputCtrl->setFocusPolicy(Qt::TabFocus);
         verticalLayout = new QVBoxLayout(CatchInputCtrl);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         toolBox = new QToolBox(CatchInputCtrl);
         toolBox->setObjectName(QString::fromUtf8("toolBox"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(toolBox->sizePolicy().hasHeightForWidth());
         toolBox->setSizePolicy(sizePolicy);
+        toolBox->setMinimumSize(QSize(250, 139));
         toolBox->setFocusPolicy(Qt::TabFocus);
         pageWeight = new QWidget();
         pageWeight->setObjectName(QString::fromUtf8("pageWeight"));
-        pageWeight->setGeometry(QRect(0, 0, 311, 57));
+        pageWeight->setGeometry(QRect(0, 0, 265, 58));
         gridLayout_3 = new QGridLayout(pageWeight);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         label = new QLabel(pageWeight);
         label->setObjectName(QString::fromUtf8("label"));
-        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
-        label->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy1);
 
         gridLayout_3->addWidget(label, 0, 0, 1, 1);
 
         label_2 = new QLabel(pageWeight);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy1);
 
         gridLayout_3->addWidget(label_2, 0, 1, 1, 1);
 
         label_3 = new QLabel(pageWeight);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        sizePolicy.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
-        label_3->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy1);
 
         gridLayout_3->addWidget(label_3, 0, 2, 1, 1);
 
         doubleSpinTotalE = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalE->setObjectName(QString::fromUtf8("doubleSpinTotalE"));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy1.setHorizontalStretch(94);
-        sizePolicy1.setVerticalStretch(20);
-        sizePolicy1.setHeightForWidth(doubleSpinTotalE->sizePolicy().hasHeightForWidth());
-        doubleSpinTotalE->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(94);
+        sizePolicy2.setVerticalStretch(20);
+        sizePolicy2.setHeightForWidth(doubleSpinTotalE->sizePolicy().hasHeightForWidth());
+        doubleSpinTotalE->setSizePolicy(sizePolicy2);
+        doubleSpinTotalE->setMinimumSize(QSize(0, 20));
         doubleSpinTotalE->setFocusPolicy(Qt::WheelFocus);
         doubleSpinTotalE->setMaximum(1000);
 
@@ -117,19 +125,21 @@ public:
         doubleSpinTotalC = new QDoubleSpinBox(pageWeight);
         doubleSpinTotalC->setObjectName(QString::fromUtf8("doubleSpinTotalC"));
         doubleSpinTotalC->setEnabled(false);
-        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy2.setHorizontalStretch(93);
-        sizePolicy2.setVerticalStretch(20);
-        sizePolicy2.setHeightForWidth(doubleSpinTotalC->sizePolicy().hasHeightForWidth());
-        doubleSpinTotalC->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(93);
+        sizePolicy3.setVerticalStretch(20);
+        sizePolicy3.setHeightForWidth(doubleSpinTotalC->sizePolicy().hasHeightForWidth());
+        doubleSpinTotalC->setSizePolicy(sizePolicy3);
+        doubleSpinTotalC->setMinimumSize(QSize(0, 20));
         doubleSpinTotalC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(doubleSpinTotalC, 1, 1, 1, 1);
 
         cmbWeightUnits = new QComboBox(pageWeight);
         cmbWeightUnits->setObjectName(QString::fromUtf8("cmbWeightUnits"));
-        sizePolicy1.setHeightForWidth(cmbWeightUnits->sizePolicy().hasHeightForWidth());
-        cmbWeightUnits->setSizePolicy(sizePolicy1);
+        sizePolicy2.setHeightForWidth(cmbWeightUnits->sizePolicy().hasHeightForWidth());
+        cmbWeightUnits->setSizePolicy(sizePolicy2);
+        cmbWeightUnits->setMinimumSize(QSize(0, 20));
         cmbWeightUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_3->addWidget(cmbWeightUnits, 1, 2, 1, 1);
@@ -137,44 +147,45 @@ public:
         toolBox->addItem(pageWeight, QString::fromUtf8("by Weight"));
         pageBoxes = new QWidget();
         pageBoxes->setObjectName(QString::fromUtf8("pageBoxes"));
-        pageBoxes->setGeometry(QRect(0, 0, 311, 57));
+        pageBoxes->setGeometry(QRect(0, 0, 265, 58));
         gridLayout_2 = new QGridLayout(pageBoxes);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         label_4 = new QLabel(pageBoxes);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        sizePolicy.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
-        label_4->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy1);
 
         gridLayout_2->addWidget(label_4, 0, 0, 1, 1);
 
         label_5 = new QLabel(pageBoxes);
         label_5->setObjectName(QString::fromUtf8("label_5"));
-        sizePolicy.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
-        label_5->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_5->sizePolicy().hasHeightForWidth());
+        label_5->setSizePolicy(sizePolicy1);
 
         gridLayout_2->addWidget(label_5, 0, 1, 1, 1);
 
         label_6 = new QLabel(pageBoxes);
         label_6->setObjectName(QString::fromUtf8("label_6"));
-        sizePolicy.setHeightForWidth(label_6->sizePolicy().hasHeightForWidth());
-        label_6->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_6->sizePolicy().hasHeightForWidth());
+        label_6->setSizePolicy(sizePolicy1);
 
         gridLayout_2->addWidget(label_6, 0, 2, 1, 1);
 
         label_7 = new QLabel(pageBoxes);
         label_7->setObjectName(QString::fromUtf8("label_7"));
-        sizePolicy.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
-        label_7->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_7->sizePolicy().hasHeightForWidth());
+        label_7->setSizePolicy(sizePolicy1);
 
         gridLayout_2->addWidget(label_7, 0, 3, 1, 1);
 
         doubleSpinNoBoxesE = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesE->setObjectName(QString::fromUtf8("doubleSpinNoBoxesE"));
-        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy3.setHorizontalStretch(67);
-        sizePolicy3.setVerticalStretch(20);
-        sizePolicy3.setHeightForWidth(doubleSpinNoBoxesE->sizePolicy().hasHeightForWidth());
-        doubleSpinNoBoxesE->setSizePolicy(sizePolicy3);
+        QSizePolicy sizePolicy4(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy4.setHorizontalStretch(67);
+        sizePolicy4.setVerticalStretch(20);
+        sizePolicy4.setHeightForWidth(doubleSpinNoBoxesE->sizePolicy().hasHeightForWidth());
+        doubleSpinNoBoxesE->setSizePolicy(sizePolicy4);
+        doubleSpinNoBoxesE->setMinimumSize(QSize(0, 20));
         doubleSpinNoBoxesE->setFocusPolicy(Qt::WheelFocus);
         doubleSpinNoBoxesE->setMaximum(1000);
 
@@ -183,22 +194,24 @@ public:
         doubleSpinNoBoxesC = new QDoubleSpinBox(pageBoxes);
         doubleSpinNoBoxesC->setObjectName(QString::fromUtf8("doubleSpinNoBoxesC"));
         doubleSpinNoBoxesC->setEnabled(false);
-        QSizePolicy sizePolicy4(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy4.setHorizontalStretch(53);
-        sizePolicy4.setVerticalStretch(20);
-        sizePolicy4.setHeightForWidth(doubleSpinNoBoxesC->sizePolicy().hasHeightForWidth());
-        doubleSpinNoBoxesC->setSizePolicy(sizePolicy4);
+        QSizePolicy sizePolicy5(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy5.setHorizontalStretch(53);
+        sizePolicy5.setVerticalStretch(20);
+        sizePolicy5.setHeightForWidth(doubleSpinNoBoxesC->sizePolicy().hasHeightForWidth());
+        doubleSpinNoBoxesC->setSizePolicy(sizePolicy5);
+        doubleSpinNoBoxesC->setMinimumSize(QSize(0, 20));
         doubleSpinNoBoxesC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesC, 1, 1, 1, 1);
 
         doubleSpinWeightBox = new QDoubleSpinBox(pageBoxes);
         doubleSpinWeightBox->setObjectName(QString::fromUtf8("doubleSpinWeightBox"));
-        QSizePolicy sizePolicy5(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy5.setHorizontalStretch(65);
-        sizePolicy5.setVerticalStretch(20);
-        sizePolicy5.setHeightForWidth(doubleSpinWeightBox->sizePolicy().hasHeightForWidth());
-        doubleSpinWeightBox->setSizePolicy(sizePolicy5);
+        QSizePolicy sizePolicy6(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy6.setHorizontalStretch(65);
+        sizePolicy6.setVerticalStretch(20);
+        sizePolicy6.setHeightForWidth(doubleSpinWeightBox->sizePolicy().hasHeightForWidth());
+        doubleSpinWeightBox->setSizePolicy(sizePolicy6);
+        doubleSpinWeightBox->setMinimumSize(QSize(0, 20));
         doubleSpinWeightBox->setFocusPolicy(Qt::WheelFocus);
         doubleSpinWeightBox->setMaximum(1000);
 
@@ -206,11 +219,12 @@ public:
 
         cmbBoxUnits = new QComboBox(pageBoxes);
         cmbBoxUnits->setObjectName(QString::fromUtf8("cmbBoxUnits"));
-        QSizePolicy sizePolicy6(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy6.setHorizontalStretch(74);
-        sizePolicy6.setVerticalStretch(20);
-        sizePolicy6.setHeightForWidth(cmbBoxUnits->sizePolicy().hasHeightForWidth());
-        cmbBoxUnits->setSizePolicy(sizePolicy6);
+        QSizePolicy sizePolicy7(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy7.setHorizontalStretch(74);
+        sizePolicy7.setVerticalStretch(20);
+        sizePolicy7.setHeightForWidth(cmbBoxUnits->sizePolicy().hasHeightForWidth());
+        cmbBoxUnits->setSizePolicy(sizePolicy7);
+        cmbBoxUnits->setMinimumSize(QSize(0, 20));
         cmbBoxUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout_2->addWidget(cmbBoxUnits, 1, 3, 1, 1);
@@ -218,41 +232,42 @@ public:
         toolBox->addItem(pageBoxes, QString::fromUtf8("by Boxes"));
         pageUnits = new QWidget();
         pageUnits->setObjectName(QString::fromUtf8("pageUnits"));
-        pageUnits->setGeometry(QRect(0, 0, 311, 57));
+        pageUnits->setGeometry(QRect(0, 0, 265, 58));
         gridLayout = new QGridLayout(pageUnits);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_8 = new QLabel(pageUnits);
         label_8->setObjectName(QString::fromUtf8("label_8"));
-        sizePolicy.setHeightForWidth(label_8->sizePolicy().hasHeightForWidth());
-        label_8->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_8->sizePolicy().hasHeightForWidth());
+        label_8->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(label_8, 0, 0, 1, 1);
 
         label_9 = new QLabel(pageUnits);
         label_9->setObjectName(QString::fromUtf8("label_9"));
-        sizePolicy.setHeightForWidth(label_9->sizePolicy().hasHeightForWidth());
-        label_9->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_9->sizePolicy().hasHeightForWidth());
+        label_9->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(label_9, 0, 1, 1, 1);
 
         label_10 = new QLabel(pageUnits);
         label_10->setObjectName(QString::fromUtf8("label_10"));
-        sizePolicy.setHeightForWidth(label_10->sizePolicy().hasHeightForWidth());
-        label_10->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_10->sizePolicy().hasHeightForWidth());
+        label_10->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(label_10, 0, 2, 1, 1);
 
         label_11 = new QLabel(pageUnits);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        sizePolicy.setHeightForWidth(label_11->sizePolicy().hasHeightForWidth());
-        label_11->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(label_11->sizePolicy().hasHeightForWidth());
+        label_11->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(label_11, 0, 3, 1, 1);
 
         spinUnitsE = new QSpinBox(pageUnits);
         spinUnitsE->setObjectName(QString::fromUtf8("spinUnitsE"));
-        sizePolicy3.setHeightForWidth(spinUnitsE->sizePolicy().hasHeightForWidth());
-        spinUnitsE->setSizePolicy(sizePolicy3);
+        sizePolicy4.setHeightForWidth(spinUnitsE->sizePolicy().hasHeightForWidth());
+        spinUnitsE->setSizePolicy(sizePolicy4);
+        spinUnitsE->setMinimumSize(QSize(0, 20));
         spinUnitsE->setFocusPolicy(Qt::WheelFocus);
         spinUnitsE->setMaximum(1000);
 
@@ -261,11 +276,12 @@ public:
         spinUnitsC = new QSpinBox(pageUnits);
         spinUnitsC->setObjectName(QString::fromUtf8("spinUnitsC"));
         spinUnitsC->setEnabled(false);
-        QSizePolicy sizePolicy7(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy7.setHorizontalStretch(50);
-        sizePolicy7.setVerticalStretch(20);
-        sizePolicy7.setHeightForWidth(spinUnitsC->sizePolicy().hasHeightForWidth());
-        spinUnitsC->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy8(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy8.setHorizontalStretch(50);
+        sizePolicy8.setVerticalStretch(20);
+        sizePolicy8.setHeightForWidth(spinUnitsC->sizePolicy().hasHeightForWidth());
+        spinUnitsC->setSizePolicy(sizePolicy8);
+        spinUnitsC->setMinimumSize(QSize(0, 20));
         spinUnitsC->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(spinUnitsC, 1, 1, 1, 1);
@@ -273,8 +289,9 @@ public:
         doubleSpinWeightUnit = new QDoubleSpinBox(pageUnits);
         doubleSpinWeightUnit->setObjectName(QString::fromUtf8("doubleSpinWeightUnit"));
         doubleSpinWeightUnit->setEnabled(true);
-        sizePolicy5.setHeightForWidth(doubleSpinWeightUnit->sizePolicy().hasHeightForWidth());
-        doubleSpinWeightUnit->setSizePolicy(sizePolicy5);
+        sizePolicy6.setHeightForWidth(doubleSpinWeightUnit->sizePolicy().hasHeightForWidth());
+        doubleSpinWeightUnit->setSizePolicy(sizePolicy6);
+        doubleSpinWeightUnit->setMinimumSize(QSize(0, 20));
         doubleSpinWeightUnit->setFocusPolicy(Qt::WheelFocus);
         doubleSpinWeightUnit->setMaximum(1000);
 
@@ -282,8 +299,9 @@ public:
 
         cmbUnitUnits = new QComboBox(pageUnits);
         cmbUnitUnits->setObjectName(QString::fromUtf8("cmbUnitUnits"));
-        sizePolicy6.setHeightForWidth(cmbUnitUnits->sizePolicy().hasHeightForWidth());
-        cmbUnitUnits->setSizePolicy(sizePolicy6);
+        sizePolicy7.setHeightForWidth(cmbUnitUnits->sizePolicy().hasHeightForWidth());
+        cmbUnitUnits->setSizePolicy(sizePolicy7);
+        cmbUnitUnits->setMinimumSize(QSize(0, 20));
         cmbUnitUnits->setFocusPolicy(Qt::WheelFocus);
 
         gridLayout->addWidget(cmbUnitUnits, 1, 3, 1, 1);
@@ -317,7 +335,7 @@ public:
         QObject::connect(doubleSpinTotalE, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
         QObject::connect(doubleSpinTotalC, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
 
-        toolBox->setCurrentIndex(2);
+        toolBox->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(CatchInputCtrl);
