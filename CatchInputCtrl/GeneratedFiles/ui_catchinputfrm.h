@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'catchinputfrm.ui'
 **
-** Created: Fri 2. Dec 16:18:46 2011
+** Created: Tue 27. Dec 15:36:17 2011
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -118,7 +118,7 @@ public:
         doubleSpinTotalE->setSizePolicy(sizePolicy2);
         doubleSpinTotalE->setMinimumSize(QSize(0, 20));
         doubleSpinTotalE->setFocusPolicy(Qt::WheelFocus);
-        doubleSpinTotalE->setMaximum(1000);
+        doubleSpinTotalE->setMaximum(50000);
 
         gridLayout_3->addWidget(doubleSpinTotalE, 1, 0, 1, 1);
 
@@ -132,6 +132,7 @@ public:
         doubleSpinTotalC->setSizePolicy(sizePolicy3);
         doubleSpinTotalC->setMinimumSize(QSize(0, 20));
         doubleSpinTotalC->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinTotalC->setMaximum(50000);
 
         gridLayout_3->addWidget(doubleSpinTotalC, 1, 1, 1, 1);
 
@@ -187,7 +188,7 @@ public:
         doubleSpinNoBoxesE->setSizePolicy(sizePolicy4);
         doubleSpinNoBoxesE->setMinimumSize(QSize(0, 20));
         doubleSpinNoBoxesE->setFocusPolicy(Qt::WheelFocus);
-        doubleSpinNoBoxesE->setMaximum(1000);
+        doubleSpinNoBoxesE->setMaximum(50000);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesE, 1, 0, 1, 1);
 
@@ -201,6 +202,7 @@ public:
         doubleSpinNoBoxesC->setSizePolicy(sizePolicy5);
         doubleSpinNoBoxesC->setMinimumSize(QSize(0, 20));
         doubleSpinNoBoxesC->setFocusPolicy(Qt::WheelFocus);
+        doubleSpinNoBoxesC->setMaximum(50000);
 
         gridLayout_2->addWidget(doubleSpinNoBoxesC, 1, 1, 1, 1);
 
@@ -213,7 +215,7 @@ public:
         doubleSpinWeightBox->setSizePolicy(sizePolicy6);
         doubleSpinWeightBox->setMinimumSize(QSize(0, 20));
         doubleSpinWeightBox->setFocusPolicy(Qt::WheelFocus);
-        doubleSpinWeightBox->setMaximum(1000);
+        doubleSpinWeightBox->setMaximum(50000);
 
         gridLayout_2->addWidget(doubleSpinWeightBox, 1, 2, 1, 1);
 
@@ -293,7 +295,7 @@ public:
         doubleSpinWeightUnit->setSizePolicy(sizePolicy6);
         doubleSpinWeightUnit->setMinimumSize(QSize(0, 20));
         doubleSpinWeightUnit->setFocusPolicy(Qt::WheelFocus);
-        doubleSpinWeightUnit->setMaximum(1000);
+        doubleSpinWeightUnit->setMaximum(50000);
 
         gridLayout->addWidget(doubleSpinWeightUnit, 1, 2, 1, 1);
 
@@ -335,7 +337,7 @@ public:
         QObject::connect(doubleSpinTotalE, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
         QObject::connect(doubleSpinTotalC, SIGNAL(valueChanged(QString)), CatchInputCtrl, SLOT(updateWeightLabel(QString)));
 
-        toolBox->setCurrentIndex(0);
+        toolBox->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(CatchInputCtrl);

@@ -58,7 +58,7 @@
  using several methods that match each other.</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>2</number>
      </property>
      <widget class="QWidget" name="pageWeight">
       <property name="geometry">
@@ -151,7 +151,7 @@
           <string>Estimated total catch weight</string>
          </property>
          <property name="maximum">
-          <double>1000.000000000000000</double>
+          <double>50000.000000000000000</double>
          </property>
         </widget>
        </item>
@@ -185,6 +185,9 @@
          <property name="whatsThis">
           <string>Calculated total catch weight 
  (comes from the aggregation of totals introduced in next forms)</string>
+         </property>
+         <property name="maximum">
+          <double>50000.000000000000000</double>
          </property>
         </widget>
        </item>
@@ -325,7 +328,7 @@
           <string>Estimated number of boxes</string>
          </property>
          <property name="maximum">
-          <double>1000.000000000000000</double>
+          <double>50000.000000000000000</double>
          </property>
         </widget>
        </item>
@@ -360,6 +363,9 @@
           <string>Calculated number of boxes 
  (comes from the aggregation of totals introduced in next forms)</string>
          </property>
+         <property name="maximum">
+          <double>50000.000000000000000</double>
+         </property>
         </widget>
        </item>
        <item row="1" column="2">
@@ -389,7 +395,7 @@
           <string>Box weight</string>
          </property>
          <property name="maximum">
-          <double>1000.000000000000000</double>
+          <double>50000.000000000000000</double>
          </property>
         </widget>
        </item>
@@ -597,7 +603,7 @@
           <string>Unit weight</string>
          </property>
          <property name="maximum">
-          <double>1000.000000000000000</double>
+          <double>50000.000000000000000</double>
          </property>
         </widget>
        </item>
